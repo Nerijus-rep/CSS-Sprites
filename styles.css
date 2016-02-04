@@ -1,0 +1,36 @@
+.button{
+    background: url("result.png");
+    height: 80px;
+    width: 320px;
+    display: inline-block;
+    background-position: 0px 0px;
+}
+.button:active{
+    width: 320px;
+    height: 80px;
+    display: inline-block;
+    background-position: 0px -86px;
+}
+.button:focus{
+    pointer-events: none;
+}
+.speach{
+    background: url("result.png");
+    height: 250px;
+    width: 340px;
+    display: inline-block;
+    background-position: 0px -171px;  
+}
+.button:focus .speach{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.speach{
+    margin-top: 200px;
+    opacity: 0;
+    visibility: hidden;    
+}
+.container{
+    text-align: center;
+}

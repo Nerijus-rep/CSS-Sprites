@@ -1,36 +1,59 @@
-.button{
+.button {
     background: url("result.png");
     height: 80px;
     width: 320px;
     display: inline-block;
-    background-position: 0px 0px;
+    background-position: 0 0;
 }
-.button:active{
+
+.button:active {
     width: 320px;
     height: 80px;
     display: inline-block;
-    background-position: 0px -86px;
+    background-position: 0 -80px;
 }
-.button:focus{
-    pointer-events: none;
-}
-.speach{
-    background: url("result.png");
-    height: 250px;
-    width: 340px;
-    display: inline-block;
-    background-position: 0px -171px;  
-}
-.button:focus .speach{
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-}
-.speach{
+
+.speech {
     margin-top: 200px;
-    opacity: 0;
-    visibility: hidden;    
+    position: relative;
+    width: 250px;
+    height: 180px;
+    padding: 0;
+	text-align: center;
+	line-height: 100px;
+    background: #4BFF77;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    border-radius: 80px;
+    border: #00FFFF solid 7px;
 }
-.container{
+
+.speech:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 0 14px 32px;
+    border-color: #4BFF77 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: -32px;
+    left: 137px;
+}
+
+.speech:before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 0 20px 38px;
+    border-color: #00FFFF transparent;
+    display: block;
+    width: 0;
+    z-index: 0;
+    top: -45px;
+    left: 131px;
+}
+
+.container {
     text-align: center;
 }
